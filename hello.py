@@ -28,7 +28,7 @@ class MyStreamListener(tweepy.StreamListener):
 
             if should_respond:
                 print 'screen_name: %s; text: %s\n' % (status.user.screen_name, status.text)
-                api.update_status('@%s did you mean %s?' % (status.user.screen_name, keyword), status.id)
+                api.update_status('.@%s did you mean %s?' % (status.user.screen_name, keyword), status.id)
 
 listener = MyStreamListener()
 stream = tweepy.Stream(auth=api.auth, listener=listener)
