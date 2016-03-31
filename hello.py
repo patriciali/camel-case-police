@@ -1,14 +1,10 @@
 import tweepy
 
 from corrections import KEYWORD_TO_TRIGGERS
+import secrets
 
-consumer_key = 'Ecu5VR9sveScib744ptCjFJ8B'
-consumer_secret = 'sWr3o65RWAb5zIfT6ONsR80LhhWY8ChOXRyWeNOjTORdDoBiQX'
-access_token = '715619091877203968-CHWIQlvk6Nt5d7fK8uUOYi1dmSv9LjX'
-access_token_secret = 'HD2C4sykp53hn6KEF3ledoYGe9yfuyEclCrtI9EPBRMdu'
-
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
+auth = tweepy.OAuthHandler(secrets.consumer_key, secrets.consumer_secret)
+auth.set_access_token(secrets.access_token, secrets.access_token_secret)
 
 api = tweepy.API(auth)
 
