@@ -5,5 +5,6 @@ KEYWORD_TO_TRIGGERS = {
     'Evernote' : ['everNote', 'EverNote', 'Ever Note'],
     'Facebook' : ['faceBook', 'FaceBook', 'face book', 'Face book', 'face Book', 'Face Book'],
     'Fitbit' : ['fitBit', 'FitBit', 'Fit Bit'],
+    'Instagram' : ['instaGram', 'InstaGram', 'Insta Gram', 'Insta gram', 'insta Gram', 'insta gram'],
     'Salesforce' : ['salesForce', 'SalesForce', 'Sales Force'],
 }
